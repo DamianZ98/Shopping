@@ -32,11 +32,10 @@ void tvDepartment(){
 		std::cout << "PLEASE ENTER YOUR OPTION : ";
 		std::cin >> option;
 
-
 		if(option == 1){
-			std::cout << "\n\n OK OK OK OK\n";
+			std::cout << std::endl;
 		} else if(option == 2){
-			std::cout << "\n\n NO NO NO NO\n";
+			std::cout << std::endl;
 		} else if(option == 3){
 			storeSections();
 		} else {
@@ -46,9 +45,37 @@ void tvDepartment(){
 
 void compDepartment(){
 	std::cout << "\n\nWelcome to the Computer Department!\n";
+	int option = 0;
+
+
+	std::cin >> option;
+
+	if(option == 1){
+		std::cout << std::endl;
+	} else if(option == 2){
+		std::cout << std::endl;
+	} else if(option == 3){
+		storeSections();
+	} else {
+		std::cout << "Invalid Input\n";
+	}
 };
 void mdaDepartment(){
 	std::cout << "\n\nWelcome to the Kitchen Department!\n";
+	int option = 0;
+
+
+	std::cin >> option;
+	
+	if(option == 1){
+		std::cout << std::endl;
+	} else if(option == 2){
+		std::cout << std::endl;
+	} else if(option == 3){
+		storeSections();
+	} else {
+		std::cout << "Invalid Input\n";
+	}
 };
 
 void storeSections(){
