@@ -79,23 +79,26 @@ void mdaDepartment(){
 };
 
 void storeSections(){
-	int option = 0;
+	while(true){
+		int option = 0;
 
-	std::cout << "\n\nSELECT PART OF THE STORE YOU'D LIKE TO BROWSE:\n";
-	std::cout << "[1] : Televisions\n";
-	std::cout << "[2] : Computers\n";
-	std::cout << "[3] : Kitchen Appliances\n";
-	std::cout << "PLEASE ENTER YOUR OPTION : ";
-	std::cin >> option;
+		std::cout << "\n\nSELECT PART OF THE STORE YOU'D LIKE TO BROWSE:\n";
+		std::cout << "[1] : Televisions\n";
+		std::cout << "[2] : Computers\n";
+		std::cout << "[3] : Kitchen Appliances\n";
+		std::cout << "PLEASE ENTER YOUR OPTION : ";
+		std::cin >> option;
 
-	if(option == 1){
-		tvDepartment();
-	} else if(option == 2){
-		compDepartment();
-	} else if(option == 3){
-		mdaDepartment();
-	} else {
-		std::cout << "\n\nI'm sorry but this Department doesn't exhist...\n";
+
+		if(option == 1){
+			tvDepartment();
+		} else if(option == 2){
+			compDepartment();
+		} else if(option == 3){
+			mdaDepartment();
+		} else {
+			std::cout << "\n\nI'm sorry but this Department doesn't exhist...\n";
+		}
 	}
 
 };
